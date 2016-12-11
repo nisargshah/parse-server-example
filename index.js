@@ -21,6 +21,7 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
+  facebookAppIds: [process.env.FACEBOOK_APP_ID || "FACEBOOK APP ID"],
   auth: {
     facebook: {
       appIds: process.env.FACEBOOK_APP_ID || "FACEBOOK APP ID"
